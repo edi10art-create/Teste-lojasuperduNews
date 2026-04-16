@@ -107,6 +107,18 @@ img {
 
 .botao:hover { transform: scale(1.05); }
 
+  .video-wrapper {
+  width: 100%; /* Faz o container ocupar a largura total */
+  max-width: 100%; /* Garante que não ultrapasse a tela */
+}
+
+.video-wrapper iframe {
+  width: 100%; /* Força o vídeo a preencher o lado a lado */
+  aspect-ratio: 16 / 9; /* Mantém a proporção de vídeo padrão */
+  height: auto;
+}
+
+
 </style>
 </head>
 
@@ -140,7 +152,7 @@ img {
 
   <!-- Ofertas Lado a Lado no PC -->
    
-     <div class="video-item">
+     <div class="video-wrapper">
           <iframe src="https://www.youtube.com/embed/AtmdSS79fNI">frameborder="0" allowfullscreen></iframe>
     </div>
 
